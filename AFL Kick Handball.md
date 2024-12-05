@@ -74,7 +74,7 @@ The classification process for the AFL Handball/Kick Classifier involves a seque
     -   Distinguishes `Handball` from other non-kick events.
 3.  **Final Output**:
     -   Assigns one of three labels: `Kick`, `Handball`, or `Other`and an associated confidence.
-    -
+    
 
 
 ## **Performance Evaluation**
@@ -159,5 +159,6 @@ The following match was used to evaluate the models on unseen data:
 -   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS
 - This match contained 443 validated events
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ==
+eyJoaXN0b3J5IjpbLTE2MzUyNTc5NjgsMzgyMDU0OTk5LC05MD
+I2NjU4NTBdfQ==
 -->
