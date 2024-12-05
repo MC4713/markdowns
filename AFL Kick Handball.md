@@ -105,9 +105,9 @@ The **Kick vs Other Classifier** is designed to separate kicks from other events
         -   **Misclassifications**: 16 (False Positives: 6, False Negatives: 10)
 
 
-**Training Confusion Matrix:** ![Kick vs Other - Training Confusion Matrix](https://i.imgur.com/Y1ErSA8.png)
+![Kick vs Other - Training Confusion Matrix](https://i.imgur.com/Y1ErSA8.png)
 
-**Test Confusion Matrix:** ![Kick vs Other - Test Confusion Matrix](https://i.imgur.com/fuQprIk.png)
+![Kick vs Other - Test Confusion Matrix](https://i.imgur.com/fuQprIk.png)
 
 ----------
 
@@ -136,9 +136,9 @@ The **Handball vs Other Classifier** identifies handball events among non-kick e
         -   **Misclassifications**: 5 (False Positives: 3, False Negatives: 2)
 
 
-**Training Confusion Matrix:** ![Handball vs Other - Training Confusion Matrix](https://i.imgur.com/9fO7xsy.png)
+![Handball vs Other - Training Confusion Matrix](https://i.imgur.com/9fO7xsy.png)
 
-**Test Confusion Matrix:** ![Handball vs Other - Test Confusion Matrix](https://i.imgur.com/4vGrL7r.png)
+![Handball vs Other - Test Confusion Matrix](https://i.imgur.com/4vGrL7r.png)
 
 ----------
 
@@ -159,5 +159,5 @@ The following match was used to evaluate the models on unseen data:
 -   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS
 - This match contained 443 validated events
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2ODE2MzE5LC05MDI2NjU4NTBdfQ==
+eyJoaXN0b3J5IjpbMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ==
 -->
