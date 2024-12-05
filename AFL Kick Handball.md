@@ -1,15 +1,10 @@
 
-### AFL Handball/Kick Classifier 
+
+## AFL Handball/Kick Classifier
 
 The AFL Handball/Kick Classifier employs a **logistic regression-based approach** for event classification. The process involves extracting meaningful features from match-tracking data, training separate classifiers for **kick vs. other events** and **handball vs. other events**, and evaluating predictions against both training and unseen test data. The classifiers use acceleration, speed, spin rate, and hang time to distinguish between events.
 
-----------
-### **Process Description**
-
-The classification process for the AFL Handball/Kick Classifier involves a sequential approach to distinguish between kicks, handballs, and other events. Below is a detailed breakdown:
-
-----------
-
+-------
 
 ### **Classification Process**
 
@@ -114,6 +109,6 @@ This match contained 443 validated events
 </iframe>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OCwzOD
-IwNTQ5OTksLTkwMjY2NTg1MF19
+eyJoaXN0b3J5IjpbNTcwMjc0NzcyLDEyNzMzOTQ4NjQsLTE2Mz
+UyNTc5NjgsMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ==
 -->
