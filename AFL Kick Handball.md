@@ -77,9 +77,9 @@ The classification process for the AFL Handball/Kick Classifier involves a seque
     
 
 
-## **Performance Evaluation**
+# **Performance Evaluation**
 
- **Kick vs Other Classification**
+# **Kick vs Other Classification**
 
 The **Kick vs Other Classifier** is designed to separate kicks from other events such as handballs and running bounces. The following features are used in classification:
 
@@ -111,7 +111,7 @@ The **Kick vs Other Classifier** is designed to separate kicks from other events
 
 ----------
 
-### **Handball vs Other Classification**
+# **Handball vs Other Classification**
 
 The **Handball vs Other Classifier** identifies handball events among non-kick events. Required features:
 
@@ -148,14 +148,14 @@ The following matches were used to train the classification models:
 
 -   **1711082824802233399**: VFL Round 1 - SAN v COL
 -   **1731728004506761742**: AFLW Semi-Final 1 - ADEL v FRE
-- These matches resulted in a total of 1190 validated events
+These matches resulted in a total of 1190 validated events
 
 #### **Test Match**
 
 The following match was used to evaluate the models on unseen data:
 
 -   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS
-- This match contained 443 validated events
+This match contained 443 validated events
 
 <iframe
   width="100%"
@@ -167,6 +167,6 @@ The following match was used to evaluate the models on unseen data:
 </iframe>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY5OTIyNzAsLTE2MzUyNTc5NjgsMz
+eyJoaXN0b3J5IjpbLTE3NzYzMTc1ODgsLTE2MzUyNTc5NjgsMz
 gyMDU0OTk5LC05MDI2NjU4NTBdfQ==
 -->
