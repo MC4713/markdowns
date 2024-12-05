@@ -113,12 +113,12 @@ The **Kick vs Other Classifier** is designed to separate kicks from other events
 
 ### **Handball vs Other Classification**
 
-The **Handball vs Other Classifier** identifies handball events among non-kick events. Key features for classification include:
+The **Handball vs Other Classifier** identifies handball events among non-kick events. Required features:
 
 -   **`hangTime`**: Duration the ball remains airborne (seconds).
 -   **`speed`**: Ball speed during the event (m/s).
 
-#### **Training and Test Results**
+## **Training and Test Results**
 
 1.  **Training Data Performance**:
     
@@ -142,7 +142,7 @@ The **Handball vs Other Classifier** identifies handball events among non-kick e
 
 ----------
 
-### **Match Data**
+# **Match Data**
 
 #### **Training Matches**
 
@@ -169,6 +169,6 @@ The following match was used to evaluate the models on unseen data:
 </iframe>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY1NTE2NTE2LC0xNjM1MjU3OTY4LDM4Mj
-A1NDk5OSwtOTAyNjY1ODUwXX0=
+eyJoaXN0b3J5IjpbLTEzMDM4MjAwMywtMTYzNTI1Nzk2OCwzOD
+IwNTQ5OTksLTkwMjY2NTg1MF19
 -->
