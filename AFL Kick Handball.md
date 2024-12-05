@@ -65,16 +65,6 @@ The classification process for the AFL Handball/Kick Classifier involves a seque
  -   Events with low confidence (confidence score below **0.7**) are flagged for further review.
 -   For each low-confidence prediction, the **time of the event** and the **predicted output** are aggregated into a separate data frame for subsequent manual inspection.
 ----------
-
-### **Summary of Process Flow**
-
-1.  **Kick vs Other Classification**:
-    -   Dstinguishes  `Kick` events from Other`
-2.  **Handball vs Other Classification**:
-    -   Distinguishes `Handball` from other non-kick events.
-3.  **Final Output**:
-    -   Assigns one of three labels: `Kick`, `Handball`, or `Other`and an associated confidence.
-    
 # **Kick vs Other Classification**
 
 The **Kick vs Other Classifier** is designed to separate kicks from other events such as handballs and running bounces. The following features are used in classification:
@@ -163,6 +153,6 @@ This match contained 443 validated events
 </iframe>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDAxOTQyNjcsLTE2MzUyNTc5NjgsMz
-gyMDU0OTk5LC05MDI2NjU4NTBdfQ==
+eyJoaXN0b3J5IjpbMTcyOTM2NTE5NiwtMTYzNTI1Nzk2OCwzOD
+IwNTQ5OTksLTkwMjY2NTg1MF19
 -->
