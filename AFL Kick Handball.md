@@ -10,60 +10,21 @@ The classification process for the AFL Handball/Kick Classifier involves a seque
 
 ----------
 
-### **Step 1: Kick vs Other Classification**
 
-1.  **Feature Extraction**:
-    
-    -   The process begins by extracting key features from match-tracking data for each event.
-    -   Features such as `accBeforeKick`, `speed`, and `spin` are used to determine if the event is a kick.
-2.  **Model Prediction**:
-    
-    -   The extracted features are fed into the **Kick vs Other Logistic Regression Classifier**.
-    -   The classifier outputs:
-        -   A predicted label: `Kick` or `Other`
-        -   A confidence score for the prediction.
-3.  **Decision**:
-    
-    -   If the event is classified as a `Kick`, the process ends here, and the label `Kick` is assigned.
+### **Classification Process**
 
-----------
-
-### **Step 2: Handball vs Other Classification**
-
-1.  **Filtering Non-Kick Events**:
+1.  **Kick vs Other**:
     
-    -   If the event is classified as `Other` in the first step, it proceeds to the next stage of classification.
-2.  **Feature Extraction**:
+    -   Features (`accBeforeKick`, `speed`, `spin`) are used by the **Kick vs Other Classifier** to predict `Kick` or `Other`.
+    -   If classified as `Kick`, the label `Kick` is assigned.
+2.  **Handball vs Other**:
     
-    -   Additional features such as `hangTime` and `speed` are extracted to differentiate handballs from other non-kick events.
-3.  **Model Prediction**:
+    -   Non-kick events are processed by the **Handball vs Other Classifier** using features (`hangTime`, `speed`) to predict `Handball` or `Other`.
+    -   Labels `Handball` or `Other` are assigned accordingly.
+3.  **Low Confidence Handling**:
     
-    -   The extracted features are passed to the **Handball vs Other Logistic Regression Classifier**.
-    -   The classifier outputs:
-        -   A predicted label: `Handball` or `Other`
-        -   A confidence score for the prediction.
-4.  **Decision**:
-    
-    -   If the event is classified as `Handball`, the label `Handball` is assigned.
-    -   Otherwise, the label `Other` is assigned.
-
-----------
-
-### **Step 3: Final Output**
-
-1.  **Labels**:
-    
-    -   Each event is assigned one of the three possible labels:
-        -   `Kick`
-        -   `Handball`
-        -   `Other`
-2.  **Confidence Scores**:
-    -   Alongside the labels, confidence scores for each classification step are provided.
-    -   These scores help assess the reliability of the predictions, with a threshold of **0.7** for high-confidence decisions.
-3.  **Post-Processing**:
-    
- -   Events with low confidence (confidence score below **0.7**) are flagged for further review.
--   For each low-confidence prediction, the **time of the event** and the **predicted output** are aggregated into a separate data frame for subsequent manual inspection.
+    -   Predictions with confidence scores below **0.7** are flagged.
+    -   These events, along with their times and predicted labels, are stored in a separate data frame for manual review.
 ----------
 # **Kick vs Other Classification**
 
@@ -153,6 +114,6 @@ This match contained 443 validated events
 </iframe>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyOTM2NTE5NiwtMTYzNTI1Nzk2OCwzOD
+eyJoaXN0b3J5IjpbMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OCwzOD
 IwNTQ5OTksLTkwMjY2NTg1MF19
 -->
