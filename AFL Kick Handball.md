@@ -158,7 +158,17 @@ The following match was used to evaluate the models on unseen data:
 
 -   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS
 - This match contained 443 validated events
+
+<iframe
+  width="100%"
+  height="500"
+  frameborder="0"
+  seamless="seamless"
+  scrolling="no"
+  src="https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html">
+</iframe>
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzUyNTc5NjgsMzgyMDU0OTk5LC05MD
-I2NjU4NTBdfQ==
+eyJoaXN0b3J5IjpbNzY1NTE2NTE2LC0xNjM1MjU3OTY4LDM4Mj
+A1NDk5OSwtOTAyNjY1ODUwXX0=
 -->
