@@ -118,8 +118,6 @@ The **Handball vs Other Classifier** identifies handball events among non-kick e
 -   **`hangTime`**: Duration the ball remains airborne (seconds).
 -   **`speed`**: Ball speed during the event (m/s).
 
-## **Training and Test Results**
-
 1.  **Training Data Performance**:
     
     -   Achieved **98.40% accuracy** on the training dataset.
@@ -169,6 +167,6 @@ The following match was used to evaluate the models on unseen data:
 </iframe>
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDM4MjAwMywtMTYzNTI1Nzk2OCwzOD
-IwNTQ5OTksLTkwMjY2NTg1MF19
+eyJoaXN0b3J5IjpbLTE1MjY5OTIyNzAsLTE2MzUyNTc5NjgsMz
+gyMDU0OTk5LC05MDI2NjU4NTBdfQ==
 -->
