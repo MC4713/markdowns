@@ -90,7 +90,7 @@ The following matches were used to train the classification models:
 
 -   **1711082824802233399**: VFL Round 1 - SAN v COL
 -   **1731728004506761742**: AFLW Semi-Final 1 - ADEL v FRE
-These matches resulted in a total of 1190 validated events
+These matches contained a total of 1190 validated events
 
 #### **Test Match**
 
@@ -104,7 +104,7 @@ The following link will allow you to visualise the kick vs other decision bounda
 https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NzYyNDg5MCw1NzAyNzQ3NzIsMTI3Mz
-M5NDg2NCwtMTYzNTI1Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1
-MF19
+eyJoaXN0b3J5IjpbLTEwODUzNTk0NTIsMTg0NzYyNDg5MCw1Nz
+AyNzQ3NzIsMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OCwzODIwNTQ5
+OTksLTkwMjY2NTg1MF19
 -->
