@@ -100,10 +100,11 @@ The following match was used to evaluate the models on unseen data:
 This match contained 443 validated events
 
 The following link will allow you to visualise the kick vs other decision boundary in 3d:
+
 https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzOTMxMTkxMiw1NzAyNzQ3NzIsMTI3Mz
+eyJoaXN0b3J5IjpbMTg0NzYyNDg5MCw1NzAyNzQ3NzIsMTI3Mz
 M5NDg2NCwtMTYzNTI1Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1
 MF19
 -->
