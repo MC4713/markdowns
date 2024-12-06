@@ -99,16 +99,11 @@ The following match was used to evaluate the models on unseen data:
 -   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS
 This match contained 443 validated events
 
-<iframe
-  width="100%"
-  height="500"
-  frameborder="0"
-  seamless="seamless"
-  scrolling="no"
-  src="https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html">
-</iframe>
+The following link will allow you to visualise the kick vs other decision boundary in 3d:
+https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwMjc0NzcyLDEyNzMzOTQ4NjQsLTE2Mz
-UyNTc5NjgsMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ==
+eyJoaXN0b3J5IjpbMTEzOTMxMTkxMiw1NzAyNzQ3NzIsMTI3Mz
+M5NDg2NCwtMTYzNTI1Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1
+MF19
 -->
