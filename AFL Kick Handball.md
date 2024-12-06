@@ -23,7 +23,7 @@ The AFL Handball/Kick Classifier employs a **logistic regression-based approach*
 ----------
 # **Kick vs Other Classification**
 
-The **Kick vs Other Classifier** is designed to separate kicks from other events such as handballs and running bounces. The following features are used in classification:
+The **Kick vs Other Classifier** is designed to separate kicks from other events such as handballs, running bounces and ball ups. The following features are used in classification:
 
 -   **`accBeforeKick`**: Average acceleration before the kick (m/s²).
 -   **`speed`**: Ball speed during the event (m/s).
@@ -104,7 +104,7 @@ The following link will allow you to visualise the kick vs other decision bounda
 https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODUzNTk0NTIsMTg0NzYyNDg5MCw1Nz
+eyJoaXN0b3J5IjpbLTE1OTQxNzY0OTksMTg0NzYyNDg5MCw1Nz
 AyNzQ3NzIsMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OCwzODIwNTQ5
 OTksLTkwMjY2NTg1MF19
 -->
