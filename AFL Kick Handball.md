@@ -43,7 +43,7 @@ The following match was used to evaluate the models on unseen data:
 (women)    
 This match contained 443 validated events. 
 
-## **Kick Vs Other** ##
+## **Kick Vs Other** 
 1.  **Training Data Performance**:
     
     -   Achieved **97.90% accuracy** on the training dataset when comparing predicted with ground truth labels
@@ -65,7 +65,7 @@ This match contained 443 validated events.
 ![Kick vs Other - Test Confusion Matrix](https://i.imgur.com/fuQprIk.png)
 
 
-## ***Handball Vs Other*** ##
+## ***Handball Vs Other*** 
 
 1.  **Training Data Performance**:
     
@@ -92,9 +92,10 @@ Explore the decision boundary for the Kick Vs Other algorithm:
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 With kicks shown in red and other in blue.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI0NTgyMTY5NSw0ODQ4OTIwNDEsLTE3MD
-I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
-NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
-wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
-MjU3OTY4LDM4MjA1NDk5OSwtOTAyNjY1ODUwXX0=
+eyJoaXN0b3J5IjpbNzI4ODM4NTI3LDEyNDU4MjE2OTUsNDg0OD
+kyMDQxLC0xNzAyNjQwOTk3LC0xOTQ5Nzc2MTcsLTY1NzQ5MTM4
+MywtMTM1MTkxMzYyMCwxNDcwODg4NjUsLTEzNjU2OTYyNTIsLT
+E1OTQxNzY0OTksMTg0NzYyNDg5MCw1NzAyNzQ3NzIsMTI3MzM5
+NDg2NCwtMTYzNTI1Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1MF
+19
 -->
