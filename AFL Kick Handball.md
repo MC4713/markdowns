@@ -6,8 +6,8 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 ----------
 
 ### **Classification Process**
-    -   This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each event are (`accBeforeKick`, `speed`, `spin`, 'gangTime'). The raw data is scaled to have zero mean and unit variance and arranged in a NumPy array. It is first sent through the Kick other classifier whereupon a label is assigned to the event based on the probability denoted by logitstic regression. This is computed by comparing the new data location in feature space in comparison to some pre-trained decision boundaries. If the probability of a kick occuring is less than 0.5, an 'other' label is applied, else it is labeled as a kick. For events labeled other,they are then parsed by the handball other classifier which performs the same process using a different feature space
-
+    -   This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each event are (`accBeforeKick`, `speed`, `spin`, 'gangTime'). The raw data is scaled to have zero mean and unit variance and arranged in a NumPy array. It is first sent through the Kick other classifier whereupon a label is assigned to the event based on the probability denoted by logitstic regression. This is computed by comparing the new data location in feature space in comparison to some pre-trained decision boundaries. If the probability of a kick occuring is less than 0.5, an 'other' label is applied, else it is labeled as a kick. For events labeled other,they are then parsed by the handball other classifier which performs the same process using a different feature space. Once this has concluded, an overall confidence
+value is associated to each event and label indicating 
     - 
 2.  **Handball vs Other**:
     
@@ -95,9 +95,9 @@ The following match was used to evaluate the models on unseen data:
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg0ODkyMDQxLC0xNzAyNjQwOTk3LC0xOT
-Q5Nzc2MTcsLTY1NzQ5MTM4MywtMTM1MTkxMzYyMCwxNDcwODg4
-NjUsLTEzNjU2OTYyNTIsLTE1OTQxNzY0OTksMTg0NzYyNDg5MC
-w1NzAyNzQ3NzIsMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OCwzODIw
-NTQ5OTksLTkwMjY2NTg1MF19
+eyJoaXN0b3J5IjpbNDc4NTg2NDEzLDQ4NDg5MjA0MSwtMTcwMj
+Y0MDk5NywtMTk0OTc3NjE3LC02NTc0OTEzODMsLTEzNTE5MTM2
+MjAsMTQ3MDg4ODY1LC0xMzY1Njk2MjUyLC0xNTk0MTc2NDk5LD
+E4NDc2MjQ4OTAsNTcwMjc0NzcyLDEyNzMzOTQ4NjQsLTE2MzUy
+NTc5NjgsMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ==
 -->
