@@ -82,9 +82,9 @@ This match contained 443 validated events.
 
 Explore the decision boundary for the Kick Vs Other algorithm:
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
-With ki
+With kicks shown in red and other in blue.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMTUzMzc1OCw0ODQ4OTIwNDEsLTE3MD
+eyJoaXN0b3J5IjpbMTEwMDk0MTQ3MCw0ODQ4OTIwNDEsLTE3MD
 I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
 NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
 wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
