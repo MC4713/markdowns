@@ -6,7 +6,7 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 ----------
 
 ### **Classification Process**
-    -   This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each event are (`accBeforeKick`, `speed`, `spin`, 'gangTime'). The raw data is scaled to have zero mean and unit variance and arranged in a NumPy array. It is first sent through the Kick other classifier whereupon a label is assigned to the event based on the probability denoted by logitstic regression. This is computed by comparing the new data location in feature space in comparison to some pre-trained decision boundaries.
+    -   This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each event are (`accBeforeKick`, `speed`, `spin`, 'gangTime'). The raw data is scaled to have zero mean and unit variance and arranged in a NumPy array. It is first sent through the Kick other classifier whereupon a label is assigned to the event based on the probability denoted by logitstic regression. This is computed by comparing the new data location in feature space in comparison to some pre-trained decision boundaries. If the probability of a kick occuring is less than 0.5, an other label is applied, else it is labeled as a kick. For events labeled other,they are then parsed by the handball kick classifier which repeats the process, this time seeking to classify handballs.
     - 
 2.  **Handball vs Other**:
     
@@ -94,7 +94,7 @@ The following match was used to evaluate the models on unseen data:
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMTg3NTc4MiwtMTcwMjY0MDk5NywtMT
+eyJoaXN0b3J5IjpbLTgzNDc1NDEwNCwtMTcwMjY0MDk5NywtMT
 k0OTc3NjE3LC02NTc0OTEzODMsLTEzNTE5MTM2MjAsMTQ3MDg4
 ODY1LC0xMzY1Njk2MjUyLC0xNTk0MTc2NDk5LDE4NDc2MjQ4OT
 AsNTcwMjc0NzcyLDEyNzMzOTQ4NjQsLTE2MzUyNTc5NjgsMzgy
