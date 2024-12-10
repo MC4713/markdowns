@@ -6,7 +6,7 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 ----------
 
 ### **Classification Process**
-    -   This classifier to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football are the (`accBeforeKick`, `speed`, `spin`, 'gangTime'). Using pre-trained decison boundaries, the raw data ius scaled to have zero mean and unit variance. This ensures the model converges optimally to the best parameters, and to reduce the skew in the cost function. The data are arranged in a NumPy array, and first 
+    -   This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each event are (`accBeforeKick`, `speed`, `spin`, 'gangTime'). Using pre-trained decison boundaries, the raw data is scaled to have zero mean and unit variance. This ensures the model converges optimally to the best parameters, and to reduce the skew in the cost function. The data are arranged in a NumPy array, and first 
     - 
 2.  **Handball vs Other**:
     
@@ -94,7 +94,7 @@ The following match was used to evaluate the models on unseen data:
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NjI1Mzk0MywtMTcwMjY0MDk5NywtMT
+eyJoaXN0b3J5IjpbMTc2NzQ3MTIzMSwtMTcwMjY0MDk5NywtMT
 k0OTc3NjE3LC02NTc0OTEzODMsLTEzNTE5MTM2MjAsMTQ3MDg4
 ODY1LC0xMzY1Njk2MjUyLC0xNTk0MTc2NDk5LDE4NDc2MjQ4OT
 AsNTcwMjc0NzcyLDEyNzMzOTQ4NjQsLTE2MzUyNTc5NjgsMzgy
