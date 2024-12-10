@@ -5,16 +5,24 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 
 ----------
 
-### **Classification Process**
- 
- This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each ball event are (`accBeforeKick`, `speed`, `spin`, 'hangTime'). 
 
-The raw data is scaled to have zero mean and unit variance and arranged in a NumPy array. It is first sent through the Kick other classifier whereupon a label is assigned to the event based on the probability denoted by logitstic regression. 
+Here is your text with proper formatting and corrections for grammar, punctuation, and word usage:
 
-This is computed by comparing the  location of new data in feature space with respect to some pre-trained decision boundaries. If the probability of a kick occuring is less than 0.5, an 'other' label is applied, else it is labeled as a kick. For events labeled other, they are then parsed by the handball other classifier. Subsequently, an overall confidence
-value is associated to each event indicating the belief about the liklihood of a correct classification. 
-   
 ----------
+
+This AFL Handball/Kick Classifier employs a **logistic regression-based approach** for event classification. The process involves extracting meaningful features from match-tracking data, training separate classifiers for **Kick vs. Other events** and **Handball vs. Other events**, and evaluating predictions against both training and unseen test data. The classifiers use acceleration, speed, spin rate, and hang time to distinguish between events.
+
+----------
+
+### **Classification Process**
+
+This classifier is used to predict whether a `Kick`, `Handball`, or `Other` event has taken place in Australian rules football. The features needed for each ball event are (`accBeforeKick`, `speed`, `spin`, `hangTime`).
+
+The raw data is scaled to have zero mean and unit variance and arranged in a NumPy array. It is first sent through the **Kick vs. Other** classifier, whereupon a label is assigned to the event based on the probability determined by logistic regression.
+
+This probability is computed by comparing the location of the new data in feature space relative to pre-trained decision boundaries. If the probability of a Kick occurring is less than 0.5, an `Other` label is applied; otherwise, it is labeled as a `Kick`. For events labeled `Other`, they are then parsed by the **Handball vs. Other** classifier. Subsequently, an overall confidence value is associated with each event, indicating the likelihood of a correct classification.
+   
+
 
 # **Training and Test Results**
 The training and testing data comprised of both professional men's and women's AFL matches. 
@@ -84,7 +92,7 @@ Explore the decision boundary for the Kick Vs Other algorithm:
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 With kicks shown in red and other in blue.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDk0MTQ3MCw0ODQ4OTIwNDEsLTE3MD
+eyJoaXN0b3J5IjpbMTI0NTgyMTY5NSw0ODQ4OTIwNDEsLTE3MD
 I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
 NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
 wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
