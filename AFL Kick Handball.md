@@ -2,7 +2,7 @@
 
 ## AFL Handball/Kick Classifier
 
-The AFL Handball/Kick Classifier employs a **logistic regression-based approach** for event classification. The process involves extracting meaningful features from match-tracking data, training separate classifiers for **kick vs. other events** and **handball vs. other events**, and evaluating predictions against both training and unseen test data. The classifiers use acceleration, speed, spin rate, and hang time to distinguish between events.
+This AFL Handball/Kick Classifier employs a **logistic regression-based approach** for event classification. The process involves extracting meaningful features from match-tracking data, training separate classifiers for **kick vs. other events** and **handball vs. other events**, and evaluating predictions against both training and unseen test data. The classifiers use acceleration, speed, spin rate, and hang time to distinguish between events.
 
 -------
 
@@ -104,7 +104,7 @@ The following link will allow you to visualise the kick vs other decision bounda
 https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQxNzY0OTksMTg0NzYyNDg5MCw1Nz
-AyNzQ3NzIsMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OCwzODIwNTQ5
-OTksLTkwMjY2NTg1MF19
+eyJoaXN0b3J5IjpbLTEzNjU2OTYyNTIsLTE1OTQxNzY0OTksMT
+g0NzYyNDg5MCw1NzAyNzQ3NzIsMTI3MzM5NDg2NCwtMTYzNTI1
+Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1MF19
 -->
