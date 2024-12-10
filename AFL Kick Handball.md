@@ -6,10 +6,7 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 ----------
 
 ### **Classification Process**
-
-1.  **Kick vs Other**:
-    
-    -   Features (`accBeforeKick`, `speed`, `spin`) are used by the **Kick vs Other Classifier** to predict `Kick` or `Other`.
+    -   The features (`accBeforeKick`, `speed`, `spin`, 'gangTime') are used by this cato predict `Kick` or `Other`.
     -   If classified as `Kick`, the label `Kick` is assigned.
 2.  **Handball vs Other**:
     
@@ -103,8 +100,8 @@ The following match was used to evaluate the models on unseen data:
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTE5MTM2MjAsMTQ3MDg4ODY1LC0xMz
-Y1Njk2MjUyLC0xNTk0MTc2NDk5LDE4NDc2MjQ4OTAsNTcwMjc0
-NzcyLDEyNzMzOTQ4NjQsLTE2MzUyNTc5NjgsMzgyMDU0OTk5LC
-05MDI2NjU4NTBdfQ==
+eyJoaXN0b3J5IjpbLTEwNzgzNjE1NDQsLTEzNTE5MTM2MjAsMT
+Q3MDg4ODY1LC0xMzY1Njk2MjUyLC0xNTk0MTc2NDk5LDE4NDc2
+MjQ4OTAsNTcwMjc0NzcyLDEyNzMzOTQ4NjQsLTE2MzUyNTc5Nj
+gsMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ==
 -->
