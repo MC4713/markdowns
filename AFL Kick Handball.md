@@ -16,8 +16,26 @@ value is associated to each event indicating the belief about the liklihood of a
    
 ----------
 
-#### **Training and Test Results**
-The training and testing data comprised of both prossional men's and women's AFL matches. 
+# **Training and Test Results**
+The training and testing data comprised of both professional men's and women's AFL matches. 
+
+
+
+
+
+The following matches were used to train the classification models:
+
+-   **1711082824802233399**: VFL Round 1 - SAN v COL (men)
+-   **1731728004506761742**: AFLW Semi-Final 1 - ADEL v FRE  (women)
+   
+    These matches contained a total of 1190 validated events.
+
+### **Test Match**
+
+The following match was used to evaluate the models on unseen data:
+
+-   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS  
+    This match contained 443 validated events.
 
 1.  **Training Data Performance**:
     
@@ -72,7 +90,7 @@ The **Handball vs Other Classifier** identifies handball events among non-kick e
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODU4NzMwNyw0ODQ4OTIwNDEsLTE3MD
+eyJoaXN0b3J5IjpbMTgwODExOTI1Miw0ODQ4OTIwNDEsLTE3MD
 I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
 NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
 wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
