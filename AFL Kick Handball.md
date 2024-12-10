@@ -18,21 +18,13 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 
 ----------
 
-# **Kick vs Other Classification**
-
-The **Kick vs Other Classifier** is designed to separate kicks from other events such as handballs, running bounces, and ball ups. The following features are used in classification:
-
--   **`accBeforeKick`**: Average acceleration before the kick (m/s²).
--   **`speed`**: Ball speed during the event (m/s).
--   **`spin`**: Spin rate of the ball (revolutions per second).
-
 #### **Training and Test Results**
 
 1.  **Training Data Performance**:
     
     -   Achieved **97.90% accuracy** on the training dataset.
     -   Confusion Matrix:
-        -   **True Positives (Kick)**: 544
+        -   **True Positives (Kick)**:   544
         -   **True Negatives (Other)**: 621
         -   **Misclassifications**: 25 (False Positives: 4, False Negatives: 21)
 2.  **Test Data Performance**:
@@ -99,7 +91,7 @@ The following match was used to evaluate the models on unseen data:
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NjY2NjY1NCwtMTM1MTkxMzYyMCwxND
+eyJoaXN0b3J5IjpbMTA1MDk2NzkxOSwtMTM1MTkxMzYyMCwxND
 cwODg4NjUsLTEzNjU2OTYyNTIsLTE1OTQxNzY0OTksMTg0NzYy
 NDg5MCw1NzAyNzQ3NzIsMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OC
 wzODIwNTQ5OTksLTkwMjY2NTg1MF19
