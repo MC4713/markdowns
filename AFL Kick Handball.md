@@ -56,9 +56,8 @@ This match contained 443 validated events.
 
 ![Kick vs Other - Test Confusion Matrix](https://i.imgur.com/fuQprIk.png)
 
-----------
 
-### ***Handball Vs Other*** ###
+## ***Handball Vs Other*** ##
 
 1.  **Training Data Performance**:
     
@@ -81,12 +80,13 @@ This match contained 443 validated events.
 
 ### Visualization
 
-Explore the decision boundary:  
+Explore the decision boundary for the Kick Vs Other algorithm:
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
+With ki
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjkzMzk5NjYsNDg0ODkyMDQxLC0xNz
-AyNjQwOTk3LC0xOTQ5Nzc2MTcsLTY1NzQ5MTM4MywtMTM1MTkx
-MzYyMCwxNDcwODg4NjUsLTEzNjU2OTYyNTIsLTE1OTQxNzY0OT
-ksMTg0NzYyNDg5MCw1NzAyNzQ3NzIsMTI3MzM5NDg2NCwtMTYz
-NTI1Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1MF19
+eyJoaXN0b3J5IjpbMTUxMTUzMzc1OCw0ODQ4OTIwNDEsLTE3MD
+I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
+NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
+wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
+MjU3OTY4LDM4MjA1NDk5OSwtOTAyNjY1ODUwXX0=
 -->
