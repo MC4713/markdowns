@@ -7,25 +7,17 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 
 ### **Classification Process**
  
- This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each event are (`accBeforeKick`, `speed`, `spin`, 'gangTime'). 
+ This classifier is used to predict whether a `Kick`, 'handball' or `Other` event has taken place in Australian rules football. The features needed for each ball event are (`accBeforeKick`, `speed`, `spin`, 'hangTime'). 
 
 The raw data is scaled to have zero mean and unit variance and arranged in a NumPy array. It is first sent through the Kick other classifier whereupon a label is assigned to the event based on the probability denoted by logitstic regression. 
 
-This is computed by comparing the  location of new data in feature space with respect to some pre-trained decision boundaries. If the probability of a kick occuring is less than 0.5, an 'other' label is applied, else it is labeled as a kick. For events labeled other, they are then parsed by the handball other classifier which performs the same process using a different feature space. Once this has concluded, an overall confidence
-value is associated to each event and label indicating the belief about the liklihood of a correct classification. 
-    - 
-2.  **Handball vs Other**:
-    
-    -   Non-kick events are processed by the **Handball vs Other Classifier** using features (`hangTime`, `speed`) to predict `Handball` or `Other`.
-    -   Labels `Handball` or `Other` are assigned accordingly.
-3.  **Low Confidence Handling**:
-    
-    -   Predictions with confidence scores below **0.7** are flagged.
-    -   These events, along with their times and predicted labels, are stored in a separate data frame for manual review.
-
+This is computed by comparing the  location of new data in feature space with respect to some pre-trained decision boundaries. If the probability of a kick occuring is less than 0.5, an 'other' label is applied, else it is labeled as a kick. For events labeled other, they are then parsed by the handball other classifier. Subsequently, an overall confidence
+value is associated to each event indicating the belief about the liklihood of a correct classification. 
+   
 ----------
 
 #### **Training and Test Results**
+The training and testing 
 
 1.  **Training Data Performance**:
     
@@ -100,9 +92,9 @@ The following match was used to evaluate the models on unseen data:
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA1NTY2NDYyLDQ4NDg5MjA0MSwtMTcwMj
-Y0MDk5NywtMTk0OTc3NjE3LC02NTc0OTEzODMsLTEzNTE5MTM2
-MjAsMTQ3MDg4ODY1LC0xMzY1Njk2MjUyLC0xNTk0MTc2NDk5LD
-E4NDc2MjQ4OTAsNTcwMjc0NzcyLDEyNzMzOTQ4NjQsLTE2MzUy
-NTc5NjgsMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ==
+eyJoaXN0b3J5IjpbLTM1MTY0OTI3NSw0ODQ4OTIwNDEsLTE3MD
+I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
+NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
+wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
+MjU3OTY4LDM4MjA1NDk5OSwtOTAyNjY1ODUwXX0=
 -->
