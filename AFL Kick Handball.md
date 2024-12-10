@@ -1,20 +1,19 @@
 
-
 # AFL Handball/Kick Classifier
 
-This AFL Handball/Kick Classifier employs a **logistic regression-based approach** for event classification. The process involves extracting meaningful features from match-tracking data, training separate classifiers for **kick vs. other events** and **handball vs. other events**, and evaluating predictions against both training and unseen test data. The classifiers use acceleration, speed, spin rate, and hang time to distinguish between events.
+This AFL Handball/Kick Classifier employs a **logistic regression-based approach** for event classification. The process involves extracting meaningful features from match-tracking data, training separate classifiers for **kick vs. other events** and **handball vs. other events**, and evaluating predictions against both training and unseen test data. The classifiers use acceleration, speed, spinRate, and hangTime to distinguish between events.
 
--------
+----------
 
 ### **Classification Process**
 
 1.  **Kick vs Other**:
     
-    -   Features (`accBeforekick`, `speed`, `spin`) are used by the **Kick vs Other Classifier** to predict `Kick` or `Other`.
+    -   Features (`accBeforeKick`, `speed`, `spin`) are used by the **Kick vs Other Classifier** to predict `Kick` or `Other`.
     -   If classified as `Kick`, the label `Kick` is assigned.
 2.  **Handball vs Other**:
     
-    -   Non-kick events are processed by the **Handball vs Other Classifier** using features (`hangtime`, `speed`) to predict `Handball` or `Other`.
+    -   Non-kick events are processed by the **Handball vs Other Classifier** using features (`hangTime`, `speed`) to predict `Handball` or `Other`.
     -   Labels `Handball` or `Other` are assigned accordingly.
 3.  **Low Confidence Handling**:
     
@@ -25,9 +24,9 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
 
 # **Kick vs Other Classification**
 
-The **Kick vs Other Classifier** is designed to separate kicks from other events such as handballs, running bounces and ball ups. The following features are used in classification:
+The **Kick vs Other Classifier** is designed to separate kicks from other events such as handballs, running bounces, and ball ups. The following features are used in classification:
 
--   **`accBeforekick`**: Average acceleration before the kick (m/s²).
+-   **`accBeforeKick`**: Average acceleration before the kick (m/s²).
 -   **`speed`**: Ball speed during the event (m/s).
 -   **`spin`**: Spin rate of the ball (revolutions per second).
 
@@ -58,7 +57,7 @@ The **Kick vs Other Classifier** is designed to separate kicks from other events
 
 The **Handball vs Other Classifier** identifies handball events among non-kick events. Required features:
 
--   **`hangtime`**: Duration the ball remains airborne (seconds).
+-   **`hangTime`**: Duration the ball remains airborne (seconds).
 -   **`speed`**: Ball speed during the event (m/s).
 
 1.  **Training Data Performance**:
@@ -84,27 +83,28 @@ The **Handball vs Other Classifier** identifies handball events among non-kick e
 
 # **Match Data**
 
-#### **Training Matches**
+### **Training Matches**
 
 The following matches were used to train the classification models:
 
 -   **1711082824802233399**: VFL Round 1 - SAN v COL
--   **1731728004506761742**: AFLW Semi-Final 1 - ADEL v FRE
-These matches contained a total of 1190 validated events
+-   **1731728004506761742**: AFLW Semi-Final 1 - ADEL v FRE  
+    These matches contained a total of 1190 validated events.
 
-#### **Test Match**
+### **Test Match**
 
 The following match was used to evaluate the models on unseen data:
 
--   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS
-This match contained 443 validated events
+-   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS  
+    This match contained 443 validated events.
 
+### Visualization
 
-https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html
-
+Explore the decision boundary:  
+[3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDg4ODY1LC0xMzY1Njk2MjUyLC0xNT
-k0MTc2NDk5LDE4NDc2MjQ4OTAsNTcwMjc0NzcyLDEyNzMzOTQ4
-NjQsLTE2MzUyNTc5NjgsMzgyMDU0OTk5LC05MDI2NjU4NTBdfQ
-==
+eyJoaXN0b3J5IjpbLTEzNTE5MTM2MjAsMTQ3MDg4ODY1LC0xMz
+Y1Njk2MjUyLC0xNTk0MTc2NDk5LDE4NDc2MjQ4OTAsNTcwMjc0
+NzcyLDEyNzMzOTQ4NjQsLTE2MzUyNTc5NjgsMzgyMDU0OTk5LC
+05MDI2NjU4NTBdfQ==
 -->
