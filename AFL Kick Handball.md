@@ -24,7 +24,7 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
     
     -   Achieved **97.90% accuracy** on the training dataset.
     -   Confusion Matrix:
-        -   **True Positives (Kick)**:   544
+        -   **True Positives (Kick)**:  544
         -   **True Negatives (Other)**: 621
         -   **Misclassifications**: 25 (False Positives: 4, False Negatives: 21)
 2.  **Test Data Performance**:
@@ -34,6 +34,7 @@ This AFL Handball/Kick Classifier employs a **logistic regression-based approach
         -   **True Positives (Kick)**: 169
         -   **True Negatives (Other)**: 258
         -   **Misclassifications**: 16 (False Positives: 6, False Negatives: 10)
+
 
 ![Kick vs Other - Training Confusion Matrix](https://i.imgur.com/Y1ErSA8.png)
 
@@ -67,6 +68,7 @@ The **Handball vs Other Classifier** identifies handball events among non-kick e
 
 ![Handball vs Other - Test Confusion Matrix](https://i.imgur.com/4vGrL7r.png)
 
+These mis-classifications
 ----------
 
 # **Match Data**
@@ -91,7 +93,7 @@ The following match was used to evaluate the models on unseen data:
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MDk2NzkxOSwtMTM1MTkxMzYyMCwxND
+eyJoaXN0b3J5IjpbLTY1NzQ5MTM4MywtMTM1MTkxMzYyMCwxND
 cwODg4NjUsLTEzNjU2OTYyNTIsLTE1OTQxNzY0OTksMTg0NzYy
 NDg5MCw1NzAyNzQ3NzIsMTI3MzM5NDg2NCwtMTYzNTI1Nzk2OC
 wzODIwNTQ5OTksLTkwMjY2NTg1MF19
