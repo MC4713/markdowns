@@ -35,7 +35,7 @@ The following match was used to evaluate the models on unseen data:
 (women)    
 This match contained 443 validated events. 
 
-## **Kick Vs Other**##
+## **Kick Vs Other** ##
 1.  **Training Data Performance**:
     
     -   Achieved **97.90% accuracy** on the training dataset when comparing predicted with ground truth labels
@@ -58,7 +58,7 @@ This match contained 443 validated events.
 
 ----------
 
-# **Handball vs Other Classification**
+### ***Handball Vs Other*** ###
 
 1.  **Training Data Performance**:
     
@@ -84,9 +84,9 @@ This match contained 443 validated events.
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDA3OTU5OSw0ODQ4OTIwNDEsLTE3MD
-I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
-NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
-wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
-MjU3OTY4LDM4MjA1NDk5OSwtOTAyNjY1ODUwXX0=
+eyJoaXN0b3J5IjpbLTE4NjkzMzk5NjYsNDg0ODkyMDQxLC0xNz
+AyNjQwOTk3LC0xOTQ5Nzc2MTcsLTY1NzQ5MTM4MywtMTM1MTkx
+MzYyMCwxNDcwODg4NjUsLTEzNjU2OTYyNTIsLTE1OTQxNzY0OT
+ksMTg0NzYyNDg5MCw1NzAyNzQ3NzIsMTI3MzM5NDg2NCwtMTYz
+NTI1Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1MF19
 -->
