@@ -19,13 +19,10 @@ value is associated to each event indicating the belief about the liklihood of a
 # **Training and Test Results**
 The training and testing data comprised of both professional men's and women's AFL matches. 
 
-
-
-
-
 The following matches were used to train the classification models:
 
--   **1711082824802233399**: VFL Round 1 - SAN v COL (men)
+-   **1711082824802233399**: VFL Round 1 - SAN v COL
+ (men)
 -   **1731728004506761742**: AFLW Semi-Final 1 - ADEL v FRE  (women)
    
     These matches contained a total of 1190 validated events.
@@ -35,11 +32,12 @@ The following matches were used to train the classification models:
 The following match was used to evaluate the models on unseen data:
 
 -   **1731136664763788685**: AFLW Elimination Final 1 - FRE v ESS  
-    This match contained 443 validated events.
+(women)    
+This match contained 443 validated events. 
 
 1.  **Training Data Performance**:
     
-    -   Achieved **97.90% accuracy** on the training dataset.
+    -   Achieved **97.90% accuracy** on the training dataset when comparing predicted with ground truth labels
     -   Confusion Matrix:
         -   **True Positives (Kick)**:  544
         -   **True Negatives (Other)**: 621
@@ -90,9 +88,9 @@ The **Handball vs Other Classifier** identifies handball events among non-kick e
 Explore the decision boundary:  
 [3D Decision Boundary Visualisation](https://MC4713.github.io/plotly-hosting/3d_decision_boundary.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODExOTI1Miw0ODQ4OTIwNDEsLTE3MD
-I2NDA5OTcsLTE5NDk3NzYxNywtNjU3NDkxMzgzLC0xMzUxOTEz
-NjIwLDE0NzA4ODg2NSwtMTM2NTY5NjI1MiwtMTU5NDE3NjQ5OS
-wxODQ3NjI0ODkwLDU3MDI3NDc3MiwxMjczMzk0ODY0LC0xNjM1
-MjU3OTY4LDM4MjA1NDk5OSwtOTAyNjY1ODUwXX0=
+eyJoaXN0b3J5IjpbLTEzNzg2NjM5NjIsNDg0ODkyMDQxLC0xNz
+AyNjQwOTk3LC0xOTQ5Nzc2MTcsLTY1NzQ5MTM4MywtMTM1MTkx
+MzYyMCwxNDcwODg4NjUsLTEzNjU2OTYyNTIsLTE1OTQxNzY0OT
+ksMTg0NzYyNDg5MCw1NzAyNzQ3NzIsMTI3MzM5NDg2NCwtMTYz
+NTI1Nzk2OCwzODIwNTQ5OTksLTkwMjY2NTg1MF19
 -->
