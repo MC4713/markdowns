@@ -97,6 +97,6 @@ However XGBoost requires considerably more data for accurate estimation, therefo
 <td><code>RF_LaunchSpeed</code></td>
 </tr>
 </tbody>
-</table><p><a href="https://imgur.com/vbkRise">Predicted Launch Angles</a></p>
-<p><a href="https://imgur.com/BJbeAoS">Predicted Launch Velocities </a></p>
+</table><h1 id="predicted-launch-angles-and-velocities">Predicted Launch Angles and Velocities</h1>
+<h2 id="predicted-launch-angles---predicted-launch-velocities-">Predicted Launch Angles <img src="https://imgur.com/vbkRise" alt="Predicted Launch Angles"> ## Predicted Launch Velocities <img src="https://imgur.com/BJbeAoS" alt="Predicted Launch Velocities"></h2>
 
