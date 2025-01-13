@@ -4,20 +4,20 @@
 ---
 
 <h1 id="soccer--launch-velocity-algorithm">Soccer  Launch Velocity Algorithm</h1>
-<h2 id="overview">Overview</h2>
-<p>This algorithm is designed to estimate the <strong>launch angle</strong> and <strong>initial speed</strong> of a soccer ball based on UWB (Ultra-Wideband) tracking data and IMU derived ball flight features.<br>
-The process involves:</p>
+<p>This algorithm is designed to estimate the <strong>launch angle</strong> and <strong>initial speed</strong> of a soccer ball based on UWB (Ultra-Wideband) tracking data and IMU derived ball flight features.</p>
+<p>The process involves:</p>
 <ol>
 <li><strong>Angle Approximation</strong>: Predicting the ball’s launch angle using machine learning models based on the duration, speed and spin of the ball during flight.</li>
 <li><strong>Speed Estimation</strong>: Computing the initial velocity using trajectory fitting or regression-based fallback methods if the flight duration is too short; less than 0.5 seconds.</li>
 </ol>
 <hr>
 <h3 id="angle-approximation">Angle Approximation</h3>
+<p>Model PKL files must be saved in the same directory as this script.</p>
 <ul>
 <li><strong>Objective</strong>: Estimate the launch angle of the ball for each event.</li>
-<li><strong>Inputs</strong>:
+<li><strong>Inputs</strong>:<br>
+-Event features for each flight: <code>duration</code>, <code>speed</code>, and <code>spin</code> are extracted from the ball IMU data.
 <ul>
-<li>Event features for each flight: duration, <code>speed</code>, and <code>spin</code> are extracted from the ball IMU data.</li>
 <li>Two pre-trained machine learning models have been prepared:
 <ul>
 <li><strong>Random Forest (RF)</strong></li>
@@ -100,4 +100,9 @@ However XGBoost requires considerably more data for accurate estimation, therefo
 </table><h1 id="predicted-launch-angles-and-velocities">Predicted Launch Angles and Velocities</h1>
 <h2 id="predicted-launch-angles-">Predicted Launch Angles <img src="https://i.imgur.com/vbkRise.png" alt="Predicted Launch Angles"></h2>
 <h2 id="predicted-launch-velocities-">Predicted Launch Velocities <img src="https://i.imgur.com/BJbeAoS.png" alt="Predicted Launch Velocities"></h2>
+<h3 id="interactive-scatter-plot">Interactive Scatter Plot</h3>
+<p>Here is the interactive scatter plot showing the speed and angle analysis:</p>
+<h3 id="interactive-scatter-plot-1">Interactive Scatter Plot</h3>
+<p>Below is the interactive scatter plot:</p>
+<iframe src="https://mc4713.github.io/plotly-hosting/interactive_scatter_plot.html" width="800" height="600">&#10;</iframe>
 
