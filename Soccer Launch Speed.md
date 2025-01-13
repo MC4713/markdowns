@@ -101,8 +101,7 @@ However XGBoost requires considerably more data for accurate estimation, therefo
 <h2 id="predicted-launch-angles-">Predicted Launch Angles <img src="https://i.imgur.com/vbkRise.png" alt="Predicted Launch Angles"></h2>
 <h2 id="predicted-launch-velocities-">Predicted Launch Velocities <img src="https://i.imgur.com/BJbeAoS.png" alt="Predicted Launch Velocities"></h2>
 <h3 id="interactive-scatter-plot">Interactive Scatter Plot</h3>
-<p>Here is the interactive scatter plot showing the speed and angle analysis:</p>
-<h3 id="interactive-scatter-plot-1">Interactive Scatter Plot</h3>
-<p>Below is the interactive scatter plot:</p>
-<iframe src="https://mc4713.github.io/plotly-hosting/interactive_scatter_plot.html" width="800" height="600">&#10;</iframe>
+<p>This interactive scatter plot provides a visualisation  of estimated launch speed and angle, and how these factors influence the errors when compared to ground truth measurments.</p>
+<p>You can explore the plot interactively by visiting the link below:</p>
+<p><a href="https://mc4713.github.io/plotly-hosting/interactive_scatter_plot.html">Interactive Scatter Plot</a></p>
 
