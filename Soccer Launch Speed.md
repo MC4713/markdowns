@@ -12,7 +12,7 @@
 </ol>
 <hr>
 <h3 id="angle-approximation">Angle Approximation</h3>
-<p>Random Forest and XGBoost PKL files are located within the src/ball module of the lib–algorithms, and are required to load in the regression-based models and subsequently provide an estimate of the launch angle of the ball for each event.</p>
+<p>Random Forest and XGBoost PKL files are located within the src/ball/SoccerAngleModels folder in lib–algorithms, and are required to load in the regression-based models and subsequently provide an estimate of the launch angle of the ball for each event.</p>
 <p><strong>Inputs</strong>:</p>
 <ul>
 <li>Event features for each flight: <code>duration</code>, <code>speed</code>, and <code>spin</code> are extracted from the ball IMU data. In this case saved as eventData.csv</li>
@@ -20,7 +20,7 @@
 <p><strong>Procedure</strong>:</p>
 <ul>
 <li>
-<p>Two pre-trained machine learning models have been prepared using the  <strong>Random Forest (RF)</strong> and  <strong>XGBoost (XGB)</strong> model architectures, which are both ensemble learning methods and use aggregated decision trees to optimise the performance.</p>
+<p>Two pre-trained machine learning models have been prepared using   <strong>Random Forest (RF)</strong> and  <strong>XGBoost (XGB)</strong> model architectures, which are both ensemble learning methods and use aggregated decision trees to optimise the performance.</p>
 </li>
 <li>
 <p>However XGBoost requires considerably more data for accurate estimation, and as of yet the random forest model is more robust against overfitting with sparse data and has been used thus far.</p>
@@ -77,5 +77,6 @@ This graph shows the distribution of predicted initial kick velocities against t
 <p>This interactive scatter plot provides a visualisation  of estimated launch speed and angle, and how these factors influence the errors when compared to ground truth measurments.</p>
 <p>You can explore the plot interactively by visiting the link below:</p>
 <p><a href="https://mc4713.github.io/plotly-hosting/interactive_scatter_plot.html">Interactive Scatter Plot</a></p>
-<p>The models were trained on soccer kick data obtained at the StoneX stadium, performed by product testing staff. 275 separate events were recorded, however one kick had a negative ground truth initial velocity and so was excluded.</p>
+<p>The models were trained on soccer kick data obtained at the StoneX stadium, performed by product testing staff. 275 separate events were recorded, however one kick had a negative ground truth initial velocity and so was excluded.<br>
+The data is saved on Sharepoint at: <a href="https://sportabletech.sharepoint.com/:x:/r/sites/Sportable-Product/_layouts/15/Doc.aspx?sourcedoc=%7BB6536793-F7AC-49B8-94CF-2BDA6466A732%7D&amp;file=Soccer%20Initial%20Velocity%20Coding%20041124.xlsx&amp;action=default&amp;mobileredirect=true">https://sportabletech.sharepoint.com/:x:/r/sites/Sportable-Product/_layouts/15/Doc.aspx?sourcedoc={B6536793-F7AC-49B8-94CF-2BDA6466A732}&amp;file=Soccer Initial Velocity Coding 041124.xlsx&amp;action=default&amp;mobileredirect=true</a></p>
 
