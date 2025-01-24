@@ -77,6 +77,6 @@ This graph shows the distribution of predicted initial kick velocities against t
 <p>This interactive scatter plot provides a visualisation  of estimated launch speed and angle, and how these factors influence the errors when compared to ground truth measurments.</p>
 <p>You can explore the plot interactively by visiting the link below:</p>
 <p><a href="https://mc4713.github.io/plotly-hosting/interactive_scatter_plot.html">Interactive Scatter Plot</a></p>
-<p>The models were trained on soccer kick data obtained at the StoneX stadium, performed by product testing staff. 275 separate events were recorded.</p>
+<p>The models were trained on soccer kick data obtained at the StoneX stadium, performed by the product testing team. 275 separate events were recorded.</p>
 <p>The data is saved on Sharepoint at: <a href="https://sportabletech.sharepoint.com/:x:/r/sites/Sportable-Product/_layouts/15/Doc.aspx?sourcedoc=%7BB6536793-F7AC-49B8-94CF-2BDA6466A732%7D&amp;file=Soccer%20Initial%20Velocity%20Coding%20041124.xlsx&amp;action=default&amp;mobileredirect=true">https://sportabletech.sharepoint.com/:x:/r/sites/Sportable-Product/_layouts/15/Doc.aspx?sourcedoc={B6536793-F7AC-49B8-94CF-2BDA6466A732}&amp;file=Soccer Initial Velocity Coding 041124.xlsx&amp;action=default&amp;mobileredirect=true</a></p>
 
